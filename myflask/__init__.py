@@ -23,8 +23,8 @@ def create_app(test_config=None):
         pass
 
     # a simple page that says hello
-    @app.route('/hello')
+    @app.route('/')
     def hello():
-        return 'Hello, World! I\'m a Flask app!<br>\nhttps://github.com/betanummeric/autodeploy-python-flask.git'
+        return '<center><h1>Hello, World! I\'m a Flask app!</h1><br>\nhttps://github.com/betanummeric/autodeploy-python-flask.git</center>'
 
     return app
